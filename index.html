@@ -1,0 +1,81 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSim - Apresentação de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="websim-container">
+        <header class="websim-header">
+            <img src="profile-pic.png" alt="Sua Foto de Perfil" class="profile-pic">
+            <h2>Seu Nome</h2>
+        </header>
+
+        <main id="screen-container">
+            <!-- Tela 1 – Boas-vindas -->
+            <div id="screen-welcome" class="screen active">
+                <img src="waving-hand.png" alt="Mão Acenando" class="icon">
+                <h1>Você quer um site profissional, bonito e pronto pra vender?</h1>
+                <div class="button-group">
+                    <button data-target="screen-what-i-do">Sim, quero!</button>
+                    <button data-target="screen-benefits" class="secondary">Ainda tenho dúvidas</button>
+                </div>
+            </div>
+
+            <!-- Tela 2 – O que eu faço -->
+            <div id="screen-what-i-do" class="screen">
+                <h2>Eu crio sites rápidos, bonitos e que funcionam no celular.</h2>
+                <p>Ideais pra quem vende no Instagram, quer divulgar seus serviços ou quer começar a ganhar dinheiro online.</p>
+                <div class="button-group">
+                    <button data-target="screen-examples">Ver exemplos de sites</button>
+                    <button data-target="screen-contact" class="secondary">Quero meu site</button>
+                </div>
+            </div>
+
+            <!-- Tela 3 – Benefícios -->
+            <div id="screen-benefits" class="screen">
+                <h2>Por que ter um site?</h2>
+                <ul class="benefits-list">
+                    <li><span class="emoji">✅</span> Design moderno</li>
+                    <li><span class="emoji">🚀</span> Entrega em até 24h</li>
+                    <li><span class="emoji">💬</span> Botão do WhatsApp no site</li>
+                    <li><span class="emoji">🔗</span> Integração com redes sociais</li>
+                    <li><span class="emoji">💰</span> Pronto pra vender!</li>
+                </ul>
+                <div class="button-group">
+                    <button data-target="screen-contact">Falar comigo no WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Tela 4 – Exemplos -->
+            <div id="screen-examples" class="screen">
+                 <h2>Exemplos de Sites</h2>
+                 <div class="examples-grid">
+                     <img src="example-site-1.png" alt="Exemplo de site 1">
+                     <img src="example-site-2.png" alt="Exemplo de site 2">
+                     <img src="example-site-3.png" alt="Exemplo de site 3">
+                 </div>
+                 <div class="button-group">
+                    <button data-target="screen-contact">Gostei, quero o meu!</button>
+                    <button data-target="screen-welcome" class="secondary">Voltar ao início</button>
+                </div>
+            </div>
+
+            <!-- Tela 5 – Contato -->
+            <div id="screen-contact" class="screen">
+                <img src="whatsapp-icon.png" alt="Ícone do WhatsApp" class="icon">
+                <h2>Vamos começar seu site hoje!</h2>
+                <p>Me chama no Instagram agora mesmo e vamos transformar sua ideia em realidade.</p>
+                <a href="https://www.instagram.com/supremecraft_q?igsh=MWd3ZXdnZjlkcHNtaQ==" target="_blank" class="button">
+                    👉 Fale comigo no Instagram
+                </a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
